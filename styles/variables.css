@@ -12,8 +12,8 @@
     --colorMain: white; /*Font Color Main*/
     --backgroundColorMainDay: #0A0203; /*Main Day*/
     --backgroundColorMainDark: #3a3a3a; /*Main Dark*/
-    --colorFooter: whitesmoke; /*Font Color Footer*/
-    --backgroundColorFooterDay: #1F191A; /*Footer Day*/
+    --colorFooter: black; /*Font Color Footer*/
+    --backgroundColorFooterDay: #FFDD00; /*Footer Day*/
     --backgroundColorFooterDark: #0b450f; /*Footer Dark*/ 
     --borderColorHeaderFooter: #a98d8d7a; /*Border Line Header/Footer*/
     --backgroundColorImg: #1F191A; /*around the picture*/
