@@ -4,11 +4,11 @@
     --maxWidth: 1440px;
 
     /* Variables for colors */    
-    --backgroundColorHeaderDay: #852828; /*Header Day*/
+    --backgroundColorHeaderDay: #FFDD00; /*Header Day*/
     --backgroundColorHeaderDark: #1c5378; /*Header Dark*/
-    --backgroundColorMainDay: rgb(112, 112, 112); /*Main Day*/
+    --backgroundColorMainDay: #0A0203; /*Main Day*/
     --backgroundColorMainDark: #3a3a3a; /*Main Dark*/
-    --backgroundColorFooterDay: #8d4214; /*Footer Day*/
+    --backgroundColorFooterDay: #1F191A; /*Footer Day*/
     --backgroundColorFooterDark: #0b450f; /*Footer Dark*/ 
     --borderColorHeaderFooter: #a98d8d7a; /*Border Line Header/Footer*/
 
