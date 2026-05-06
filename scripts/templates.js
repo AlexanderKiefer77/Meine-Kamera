@@ -64,7 +64,28 @@ function tips() {
 }
 
 function depthOfField() {
-    console.log('Schärfentiefe');
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <H2>Schärfentiefe</H2>
+
+        <H3>Blende</H3>
+            <p>offene Blende und nah am Objekt</p> 
+            <p>Schärfentiefe gering -> Hintergrund unscharf</p>
+        <H3>Brennweite</H3>
+            <p>bei gleichem Abstand</p>
+            <p>weitwinlig eher scharf</p>
+            <p>zoomen eher unscharf</p>
+        <H3>Distanz</H3>
+            <H4>zwischen Objekt und Kamera</H4>
+            <p>Bei gleicher Blende und Brennweite</p>
+            <p>näher dran -> Hintergrund unschärfer</p>
+            <p>weiter weg -> Hintergrund schärfer</p>        
+        <br>
+        <H4>Größe vom Objekt ändert sich jeweils</H4>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
 }
 
 function apps() {
