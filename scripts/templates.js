@@ -46,6 +46,70 @@ function cameraModi() {
     `
 }
 
+function objective() {
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
+    dynamicContent.innerHTML = `
+        <nav>
+            <ul>
+                <li><button class="btn" onclick="sigma()">Sigma 17-70</button></li>
+                <li><button class="btn" onclick="apps()">Nikon AF-P Nikkor 18-55 mm F3.5-5.6G DX VR</button></li>
+                <li><button class="btn" onclick="milkyWay()">Tamron AF 70-300 F4-5.6 Di Macro (1:2) A17</button></li>
+            </ul>
+        </nav>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
+}
+
+function sigma() {
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
+    dynamicContent.innerHTML = `
+        <H2>Sigma 17-70 mm F2.8-4 DC Makro OS HSM Contemporary</H2>
+        
+        <H3>Brennweitenbereich:</H3>
+        <p>17-70 mm</p>
+
+        <H3>Lichtstärke:</H3>
+        <p>F2,8 bis F4</p>
+
+        <H3>Kleinste Blendenöffnung:</H3>
+        <p>F22</p>
+
+        <H3>Anzahl Blendenlamellen:</H3>
+        <p>7</p>
+
+        <H3>Autofokus:</H3>
+        <p>Fokusmotor im Objektiv (Ultraschallmotor)</p>
+
+        <H3>Linsensystem:</H3>
+        <p>16 Linsen in 14 Gruppen inkl. ED und asphärische Linsen</p>
+
+        <H3>Bildstabilisator:</H3>
+        <p>ja</p>
+
+        <H3>Naheinstellgrenze:</H3>
+        <p>22 cm</p>
+
+        <H3>Filtergewinde:</H3>
+        <p>72 mm</p>
+
+        <H3>Abmessungen (Ø x Länge):</H3>
+        <p>79 x 82 mm</p>
+
+        <H3>Gewicht:</H3>
+        <p>470 g</p>
+        
+
+        <button class="btn marTop" onclick="objective()">Zurück</button>
+    `
+}
+
+
+
 function tips() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
@@ -74,17 +138,20 @@ function depthOfField() {
         <H2>Schärfentiefe</H2>
 
         <H3>Blende</H3>
-            <p>offene Blende und nah am Objekt</p> 
-            <p>Schärfentiefe gering -> Hintergrund unscharf</p>
+        <p>offene Blende und nah am Objekt</p> 
+        <p>Schärfentiefe gering -> Hintergrund unscharf</p>
+
         <H3>Brennweite</H3>
-            <p>bei gleichem Abstand</p>
-            <p>weitwinlig eher scharf</p>
-            <p>zoomen eher unscharf</p>
+        <p>bei gleichem Abstand</p>
+        <p>weitwinlig eher scharf</p>
+        <p>zoomen eher unscharf</p>
+
         <H3>Distanz</H3>
-            <H4>zwischen Objekt und Kamera</H4>
-            <p>Bei gleicher Blende und Brennweite</p>
-            <p>näher dran -> Hintergrund unschärfer</p>
-            <p>weiter weg -> Hintergrund schärfer</p>        
+        <H4>zwischen Objekt und Kamera</H4>
+        <p>Bei gleicher Blende und Brennweite</p>
+        <p>näher dran -> Hintergrund unschärfer</p>
+        <p>weiter weg -> Hintergrund schärfer</p>   
+
         <br>
         <H4>Größe vom Objekt ändert sich jeweils</H4>
 
