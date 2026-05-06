@@ -1,8 +1,8 @@
 
 function technicDatas() {
     content.classList.add("d_none");
-    techDatas.classList.remove("d_none");
-    techDatas.innerHTML = `
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
         <H2>Technische Daten meiner Nikon D5600</h2>
         <p>ISO bis 1600 sehr gut</p>
         <p>ISO bis 3200 gut</p>
@@ -24,3 +24,22 @@ function technicDatas() {
     `;
 }
 
+function cameraModi() {
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <H2>Die Verschiedene Kamara Modi</h2>
+        <H3>Auto</H3>
+        <p>Automatik-Modus</p>
+        <H3>M</H3>
+        <p>Manueller-Modus</p>
+        <H3>A</H3>
+        <p>Zeitautomatik</p>
+        <H3>S</H3>
+        <p>Blendenautomatik</p>
+        <H3>P</H3>
+        <p>Programmautomatik mit Programmverschiebung</p>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
+}

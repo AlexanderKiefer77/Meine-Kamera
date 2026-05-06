@@ -1,5 +1,5 @@
 let content = document.getElementById('content');
-let techDatas = document.getElementById('techDatas');
+let dynamicContent = document.getElementById('dynamicContent');
 
 
 /**
@@ -12,6 +12,6 @@ document.getElementById('theme-toggle').addEventListener('click', function () {
 });
 
 function backBtn() {
-    techDatas.classList.add("d_none");
+    dynamicContent.classList.add("d_none");
     content.classList.remove("d_none");
 }
