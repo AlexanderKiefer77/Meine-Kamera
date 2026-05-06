@@ -155,6 +155,15 @@ function fireworks() {
 }
 
 function fence() {
-    console.log('Zaun');
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <H2>Zaun</H2>
+        <p>Bei Zaun durch fotografieren,</p>
+        <p>Ganz nah ran gehen, reinzoomen, Blende ganz auf.</p>
+        <p>Dann sollte der Zaun nicht zu sehen sein.</p>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
 }
 
