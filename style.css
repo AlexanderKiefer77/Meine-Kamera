@@ -59,7 +59,7 @@
     margin-top: 16px;
     text-align: center;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* ######################################################## */
@@ -75,7 +75,8 @@ nav ul {
 nav button {
     width: 200px;
     background-color: var(--backgroundColorImg);
-    color: #fff;
+    color: var(--colorMain);
+    font-weight: 700;
     border: none;
     padding: 10px 18px;
     border-radius: 12px;
@@ -89,9 +90,9 @@ nav button:hover {
     transform: scale(0.95);
 }
 
-/* .navButtons button:active {
+nav button:active {
     transform: scale(0.9);
-} */
+}
 
 /* ######################################################## */
 .footer {

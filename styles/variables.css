@@ -20,12 +20,12 @@
     --backgroundColorImgHover: #322A18; /*around the picture hover*/
 
     /* Variables for text colors in table */
-    --ColorTableAirlineHeaderDay: darkblue; /* font color in airline header Day */
-    --ColorTableAirlineHeaderDark: darkblue; /* font color in airline header Dark */
-    --ColorTableDay: black; /* font color in table Day */
-    --ColorTableDark: rgb(0, 0, 0); /* font color in table Dark */
+    /*--ColorTableAirlineHeaderDay: darkblue; /* font color in airline header Day */
+    /*--ColorTableAirlineHeaderDark: darkblue; /* font color in airline header Dark */
+    /*--ColorTableDay: black; /* font color in table Day */
+    /*--ColorTableDark: rgb(0, 0, 0); /* font color in table Dark */
 
     /* Variable for background table cells */
-    --backgroundColorTableCellsJa: rgb(119, 206, 119); /* table rows for "ja" */
-    --backgroundColorTableCellsNein: rgb(206, 107, 107); /* table rows for "nein" */
+    /*--backgroundColorTableCellsJa: rgb(119, 206, 119); /* table rows for "ja" */
+    /*--backgroundColorTableCellsNein: rgb(206, 107, 107); /* table rows for "nein" */
 }
