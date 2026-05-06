@@ -21,7 +21,7 @@ function technicDatas() {
         <p>Belichtungskorrektur: -5,0 bis +5,0 EV mit Schrittgröße von 1/3 bis 1/2 EV</p>
         <p>Serienaufnahmen: 5,0 Bilder/s bei höchster Auflösung, 4 Bilder pro Sekunde (14-Bit RAW)</p>
         
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `;
 }
 
@@ -42,7 +42,7 @@ function cameraModi() {
         <H3>P</H3>
         <p>Programmautomatik mit Programmverschiebung</p>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -55,11 +55,11 @@ function objective() {
             <ul>
                 <li><button class="btn" onclick="sigma()">Sigma 17-70</button></li>
                 <li><button class="btn" onclick="nikon()">Nikon 18-55</button></li>
-                <li><button class="btn" onclick="milkyWay()">Tamron AF 70-300 F4-5.6 Di Macro (1:2) A17</button></li>
+                <li><button class="btn" onclick="tamron()">Tamron 70-300</button></li>
             </ul>
         </nav>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -110,7 +110,7 @@ function sigma() {
         <p>470 g</p>
         
 
-        <button class="btn marTop" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="objective()">Zurück</button>
     `
 }
 
@@ -161,11 +161,60 @@ function nikon() {
         <p>205 g</p>
         
 
-        <button class="btn marTop" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="objective()">Zurück</button>
     `
 }
 
+function tamron() {
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
+    dynamicContent.innerHTML = `
+        <H2>Tamron AF 70-300 F4-5.6 Di Macro 1:2 A17</H2>
+        
+        <H3>Brennweitenbereich:</H3>
+        <p>70-300 mm</p>
 
+        <H3>Lichtstärke:</H3>
+        <p>F4 bis F5,6</p>
+
+        <H3>Kleinste Blendenöffnung:</H3>
+        <p>nicht angegeben</p>
+
+        <H3>Anzahl Blendenlamellen:</H3>
+        <p>9</p>
+
+        <H3>Autofokus:</H3>
+        <p>Fokusmotor im Objektiv</p>
+
+        <H3>Innenfokussierung:</H3>
+        <p>nein</p>
+
+        <H3>Linsensystem:</H3>
+        <p>16 Linsen in 14 Gruppen inkl. ED und asphärische Linsen</p>
+
+        <H3>Bildstabilisator:</H3>
+        <p>nein</p>
+
+        <H3>Naheinstellgrenze:</H3>
+        <p>150 cm</p>
+
+        <H3>Größter Abbildungsmaßstab:</H3>
+        <p>1:2</p>
+
+        <H3>Filtergewinde:</H3>
+        <p>62 mm</p>
+
+        <H3>Abmessungen (Ø x Länge):</H3>
+        <p>76 x 116 mm</p>
+
+        <H3>Gewicht:</H3>
+        <p>435 g</p>
+        
+
+        <button class="btn marBtn" onclick="objective()">Zurück</button>
+    `
+}
 
 function tips() {
     content.classList.add("d_none");
@@ -183,7 +232,7 @@ function tips() {
             </ul>
         </nav>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -212,7 +261,7 @@ function depthOfField() {
         <br>
         <H4>Größe vom Objekt ändert sich jeweils</H4>
 
-        <button class="btn marTop" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -248,7 +297,7 @@ function apps() {
 
         <H3>npf-Rechner</H3>
 
-        <button class="btn marTop" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -266,7 +315,7 @@ function milkyWay() {
         <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
         <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
 
-        <button class="btn marTop" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -278,7 +327,7 @@ function northernLights() {
         <H2>Polarlichter</H2>
         <p>Bohnensack Folge 219 ab ca. Min.30</p>
 
-        <button class="btn marTop" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -296,7 +345,7 @@ function fireworks() {
         <p>Weißabgleich fest auf ca. 5000 K</p>        
         <p>Belichtungszeit ca. 3-4 sek.</p>
 
-        <button class="btn marTop" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -310,7 +359,7 @@ function fence() {
         <p>Ganz nah ran gehen, reinzoomen, Blende ganz auf.</p>
         <p>Dann sollte der Zaun nicht zu sehen sein.</p>
 
-        <button class="btn marTop" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
