@@ -49,6 +49,7 @@ function cameraModi() {
 function objective() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    headline.innerText = 'Meine Objektive';
     dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <nav>

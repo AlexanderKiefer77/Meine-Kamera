@@ -1,5 +1,8 @@
+
+let headline = document.getElementById('headline');
 let content = document.getElementById('content');
 let dynamicContent = document.getElementById('dynamicContent');
+
 
 
 /**
@@ -14,8 +17,5 @@ document.getElementById('theme-toggle').addEventListener('click', function () {
 function backBtn() {
     dynamicContent.classList.add("d_none");
     content.classList.remove("d_none");
-}
-
-function subBackBtn() {
-    
+    headline.innerText = 'Meine Kamera';
 }
