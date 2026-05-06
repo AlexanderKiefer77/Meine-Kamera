@@ -107,6 +107,11 @@ function apps() {
         <p>www.lightpollutionmap.info</p>
         <p>auch als App</p>
 
+        <H3>Gebrauchte Objektive</H3>
+        <p>Bohnensack Folge 220</p>
+        <p>www.mpb.com</p>
+        <p>www.nikonclassics-michalke.de</p>
+
         <H3>PhotoPills</H3>
 
         <H3>LunaSolCal</H3>
@@ -135,7 +140,14 @@ function milkyWay() {
 }
 
 function northernLights() {
-    console.log('Polarlichter');
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <H2>Polarlichter</H2>
+        <p>Bohnensack Folge 219 ab ca. Min.30</p>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
 }
 
 function fireworks() {
