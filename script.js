@@ -3,8 +3,6 @@ let headline = document.getElementById('headline');
 let content = document.getElementById('content');
 let dynamicContent = document.getElementById('dynamicContent');
 
-
-
 /**
  * dark mode button
  */

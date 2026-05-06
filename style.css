@@ -1,7 +1,7 @@
 /* ######################################################## */
 .header {
     height: var(--heightHeader);
-    background-color: var(--backgroundColorHeaderDay);
+    background-color: var(--bgColorHeaderDay);
     display: flex;
     border-bottom: solid 6px var(--borderColorHeaderFooter);
 }
@@ -22,7 +22,7 @@ h1 {
 
 /* ######################################################## */
 .main {
-    background-color: var(--backgroundColorMainDay);
+    background-color: var(--bgColorMainDay);
     min-height: calc(100dvh - var(--heightHeader) - var(--heightFooter));
     width: 100%;
 }
@@ -41,7 +41,7 @@ h1 {
 .imgCamera {
     width: 300px;
     border-radius: 16px;
-    background-color: var(--backgroundColorImg);
+    background-color: var(--bgColorImg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ h1 {
 }
 
 .imgCamera:hover {
-    background: var(--backgroundColorImgHover);
+    background: var(--bgColorImgHover);
 }
 
 .imgCamera img {
@@ -82,7 +82,7 @@ nav ul {
 
 .btn {
     width: 200px;
-    background-color: var(--backgroundColorImg);
+    background-color: var(--bgColorBtn);
     color: var(--colorMain);
     font-weight: 700;
     border: none;
@@ -94,17 +94,17 @@ nav ul {
 }
 
 .btn:hover {
-    background-color: var(--backgroundColorImgHover);
+    background-color: var(--bgColorImgHover);
     transform: scale(0.97);
 }
 
 .marBtn {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
 .bg {
-    background-color: var(--backgroundColorMainDay);
+    background-color: var(--bgColorBtn);
 }
 
 /* ######################################################## */
@@ -114,7 +114,7 @@ nav ul {
     align-items: center;
     text-align: center;
     color: white;
-    background-color: var(--backgroundColorImg);
+    background-color: var(--bgColorDynamicContent);
     width: max-content;
     max-width: calc(100% - 40px);
     border-radius: 16px;
@@ -139,7 +139,7 @@ h3 {
 /* ######################################################## */
 .footer {
     height: var(--heightFooter);
-    background-color: var(--backgroundColorFooterDay);
+    background-color: var(--bgColorFooterDay);
     display: flex;
     align-items: center;
     border-top: solid 6px var(--borderColorHeaderFooter);

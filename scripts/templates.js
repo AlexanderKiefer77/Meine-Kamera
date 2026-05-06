@@ -21,7 +21,7 @@ function technicDatas() {
         <p>Belichtungskorrektur: -5,0 bis +5,0 EV mit Schrittgröße von 1/3 bis 1/2 EV</p>
         <p>Serienaufnahmen: 5,0 Bilder/s bei höchster Auflösung, 4 Bilder pro Sekunde (14-Bit RAW)</p>
         
-        <button class="btn marBtn bg" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `;
 }
 
@@ -42,7 +42,7 @@ function cameraModi() {
         <H3>P</H3>
         <p>Programmautomatik mit Programmverschiebung</p>
 
-        <button class="btn marBtn bg" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -60,7 +60,7 @@ function objective() {
             </ul>
         </nav>
 
-        <button class="btn marBtn bg" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -111,7 +111,7 @@ function sigma() {
         <p>470 g</p>
         
 
-        <button class="btn marBtn bg" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="objective()">Zurück</button>
     `
 }
 
@@ -162,7 +162,7 @@ function nikon() {
         <p>205 g</p>
         
 
-        <button class="btn marBtn bg" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="objective()">Zurück</button>
     `
 }
 
@@ -213,13 +213,14 @@ function tamron() {
         <p>435 g</p>
         
 
-        <button class="btn marBtn bg" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="objective()">Zurück</button>
     `
 }
 
 function tips() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    headline.innerText = 'Meine Tipps';
     dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <nav>
@@ -233,7 +234,7 @@ function tips() {
             </ul>
         </nav>
 
-        <button class="btn marBtn bg" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -262,7 +263,7 @@ function depthOfField() {
         <br>
         <H4>Größe vom Objekt ändert sich jeweils</H4>
 
-        <button class="btn marBtn bg" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -298,7 +299,7 @@ function apps() {
 
         <H3>npf-Rechner</H3>
 
-        <button class="btn marBtn bg" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -316,7 +317,7 @@ function milkyWay() {
         <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
         <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
 
-        <button class="btn marBtn bg" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -328,7 +329,7 @@ function northernLights() {
         <H2>Polarlichter</H2>
         <p>Bohnensack Folge 219 ab ca. Min.30</p>
 
-        <button class="btn marBtn bg" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -346,7 +347,7 @@ function fireworks() {
         <p>Weißabgleich fest auf ca. 5000 K</p>        
         <p>Belichtungszeit ca. 3-4 sek.</p>
 
-        <button class="btn marBtn bg" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 
@@ -360,7 +361,7 @@ function fence() {
         <p>Ganz nah ran gehen, reinzoomen, Blende ganz auf.</p>
         <p>Dann sollte der Zaun nicht zu sehen sein.</p>
 
-        <button class="btn marBtn bg" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
     `
 }
 

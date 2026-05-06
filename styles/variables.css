@@ -7,25 +7,22 @@
 
     /* Variables for colors */    
     --colorHeader: black; /*Font Color Header*/
-    --backgroundColorHeaderDay: #FFDD00; /*Header Day*/
-    --backgroundColorHeaderDark: #1c5378; /*Header Dark*/
+    --bgColorHeaderDay: #FFDD00; /*Header Day*/
+    --bgColorHeaderDark: #1c5378; /*Header Dark*/
+
     --colorMain: white; /*Font Color Main*/
-    --backgroundColorMainDay: #0A0203; /*Main Day*/
-    --backgroundColorMainDark: #3a3a3a; /*Main Dark*/
+    --bgColorMainDay: #0A0203; /*Main Day*/
+    --bgColorMainDark: #3a3a3a; /*Main Dark*/
+
     --colorFooter: black; /*Font Color Footer*/
-    --backgroundColorFooterDay: #FFDD00; /*Footer Day*/
-    --backgroundColorFooterDark: #0b450f; /*Footer Dark*/ 
+    --bgColorFooterDay: #FFDD00; /*Footer Day*/
+    --bgColorFooterDark: #0b450f; /*Footer Dark*/ 
+
     --borderColorHeaderFooter: #a98d8d7a; /*Border Line Header/Footer*/
-    --backgroundColorImg: #1F191A; /*around the picture*/
-    --backgroundColorImgHover: #322A18; /*around the picture hover*/
 
-    /* Variables for text colors in table */
-    /*--ColorTableAirlineHeaderDay: darkblue; /* font color in airline header Day */
-    /*--ColorTableAirlineHeaderDark: darkblue; /* font color in airline header Dark */
-    /*--ColorTableDay: black; /* font color in table Day */
-    /*--ColorTableDark: rgb(0, 0, 0); /* font color in table Dark */
+    --bgColorImg: #1F191A; /*around the picture*/
+    --bgColorImgHover: #322A18; /*around the picture hover*/
+    --bgColorBtn: #1F191A;
+    --bgColorDynamicContent: rgb(100, 90, 30);
 
-    /* Variable for background table cells */
-    /*--backgroundColorTableCellsJa: rgb(119, 206, 119); /* table rows for "ja" */
-    /*--backgroundColorTableCellsNein: rgb(206, 107, 107); /* table rows for "nein" */
 }

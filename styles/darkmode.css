@@ -67,67 +67,33 @@ body[darkmode="off"] .mode-toggle>span>img:nth-child(2) {
 /* #################################################### */
 /* for header */
 body[darkmode="on"] header {
-    background-color: var(--backgroundColorHeaderDark);
+    background-color: var(--bgColorHeaderDark);
     transition: background-color 0.5s;
 }
 
 body[darkmode="off"] header {
-    background-color: var(--backgroundColorHeaderDay);
+    background-color: var(--bgColorHeaderDay);
     transition: background-color 0.5s;
 }
 
 /* for main */
 body[darkmode="on"] main {
-    background-color: var(--backgroundColorMainDark);
+    background-color: var(--bgColorMainDark);
     transition: background-color 0.5s;
 }
 
 body[darkmode="off"] main {
-    background-color: var(--backgroundColorMainDay);
+    background-color: var(--bgColorMainDay);
     transition: background-color 0.5s;
 }
 
 /* for footer */
 body[darkmode="on"] footer {
-    background-color: var(--backgroundColorFooterDark);
+    background-color: var(--bgColorFooterDark);
     transition: background-color 0.5s;
 }
 
 body[darkmode="off"] footer {
-    background-color: var(--backgroundColorFooterDay);
+    background-color: var(--bgColorFooterDay);
     transition: background-color 0.5s;
 }
-
-
-/* ################## zum weiter Einbinden ################## */
-/*for table */
-/* body[darkmode="on"] td {
-    color: var(--ColorTableDark);
-    transition: background-color 0.5s;
-}
-
-body[darkmode="off"] td {
-    color: var(--ColorTableDay);
-    transition: background-color 0.5s;
-}
-
-body[darkmode="on"] th {
-    color: var(--ColorTableDark);
-    transition: background-color 0.5s;
-}
-
-body[darkmode="off"] th {
-    color: var(--ColorTableDay);
-    transition: background-color 0.5s;
-}
-
-body[darkmode="on"] .airline-header {
-    color: var(--ColorTableAirlineHeaderDark);
-    transition: background-color 0.5s;
-}
-
-body[darkmode="off"] .airline-header {
-    color: var(--ColorTableAirlineHeaderDay);
-    transition: background-color 0.5s;
-} */
-
