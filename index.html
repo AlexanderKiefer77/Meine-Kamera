@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/standart.css">
     <link rel="stylesheet" href="./styles/darkmode.css">
 
+    <script src="./scripts/templates.js"></script>
     <script src="./scripts/fullscreen.js"></script>
 
 </head>
@@ -28,7 +29,8 @@
 
     <main id="aot" class="main">
         <div class="contentWidth">
-            <section class="content">
+
+            <section id="content" class="content">
 
                 <figure class="sectionImgCamera">
                     <img src="./assets/img/Own_1.JPG" alt="Picture from Camera">
@@ -37,16 +39,22 @@
 
                 <nav>
                     <ul>
-                        <li><button>Techn. Daten</button></li>
-                        <li><button>Kamera-Modi</button></li>
-                        <li><button>Meine Objektive</button></li>
-                        <li><button>Tipps</button></li>
+                        <li><button class="btn" onclick="technicDatas()">Techn. Daten</button></li>
+                        <li><button class="btn">Kamera-Modi</button></li>
+                        <li><button class="btn">Meine Objektive</button></li>
+                        <li><button class="btn">Tipps</button></li>
                     </ul>
                 </nav>
 
             </section>
 
+            <div id="techDatas" class="techDatas d_none"></div>
+
         </div>
+
+
+
+
     </main>
 
     <footer class="footer">
