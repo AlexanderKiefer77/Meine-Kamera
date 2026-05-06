@@ -128,8 +128,9 @@ function milkyWay() {
     dynamicContent.classList.remove("d_none");
     dynamicContent.innerHTML = `
         <H2>Milchstraße</H2>
+        <p>Stativ</p>
         <p>manueller Fokus</p>
-        <p>Blende 2.8</p>
+        <p>Blende f2.8</p>
         <p>Bildstabilisator ausschalten</p>
         <p>ISO relativ hoch einstellen</p>
         <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
@@ -151,7 +152,20 @@ function northernLights() {
 }
 
 function fireworks() {
-    console.log('Feuerwerk');
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <H2>Feuerwerk</H2>
+        <p>Stativ</p>
+        <p>manueller Fokus</p>
+        <p>Blende f8</p>
+        <p>Bildstabilisator ausschalten</p>
+        <p>ISO ca. 400, entsprechend anpassen</p>
+        <p>Weißabgleich fest auf ca. 5000 K</p>        
+        <p>Belichtungszeit ca. 3-4 sek.</p>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
 }
 
 function fence() {
