@@ -1,0 +1,24 @@
+
+:root {
+    /* Variable for max. Content width  */
+    --maxWidth: 1440px;
+
+    /* Variables for colors */    
+    --backgroundColorHeaderDay: #852828; /*Header Day*/
+    --backgroundColorHeaderDark: #1c5378; /*Header Dark*/
+    --backgroundColorMainDay: rgb(112, 112, 112); /*Main Day*/
+    --backgroundColorMainDark: #3a3a3a; /*Main Dark*/
+    --backgroundColorFooterDay: #8d4214; /*Footer Day*/
+    --backgroundColorFooterDark: #0b450f; /*Footer Dark*/ 
+    --borderColorHeaderFooter: #a98d8d7a; /*Border Line Header/Footer*/
+
+    /* Variables for text colors in table */
+    --ColorTableAirlineHeaderDay: darkblue; /* font color in airline header Day */
+    --ColorTableAirlineHeaderDark: darkblue; /* font color in airline header Dark */
+    --ColorTableDay: black; /* font color in table Day */
+    --ColorTableDark: rgb(0, 0, 0); /* font color in table Dark */
+
+    /* Variable for background table cells */
+    --backgroundColorTableCellsJa: rgb(119, 206, 119); /* table rows for "ja" */
+    --backgroundColorTableCellsNein: rgb(206, 107, 107); /* table rows for "nein" */
+}

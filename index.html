@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Nikon</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/standart.css">
+    <link rel="stylesheet" href="./styles/darkmode.css">
+
+    <script src="./scripts/fullscreen.js"></script>
+
+</head>
+
+<body darkmode="on">
+
+    <header id="header" class="header">
+        <div class="contentWidth">
+            <section class="innerHeader">
+                <h1 onclick="openFullscreen()">Meine Kamera</h1>
+            </section>
+        </div>
+    </header>
+
+    <main id="aot" class="main">
+        <div class="contentWidth">
+            <section class="content"></section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contentWidth">
+            <section class="innerFooter">
+                <!-- Dark Mode -->
+                <button id="theme-toggle" class="mode-toggle" tabindex="0" aria-label="Button for Dark Mode">
+                    <span>
+                        <img src="./assets/img/Sun.svg" alt="Sun Icon">
+                        <img src="./assets/img/Moon.svg" alt="Moon Icon">
+                    </span>
+                </button>       
+
+                <div class="created">
+                    <span onclick="closeFullscreen()">© Created by Alexander Kiefer</span>
+                </div>
+
+                <a href="./impressum.html">Impressum</a>
+
+            </section>
+
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

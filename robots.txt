@@ -1,0 +1,15 @@
+
+User-agent: *
+Disallow: /style.css
+Disallow: /script.js
+Disallow: /assets/bootstrap/
+Disallow: /assets/img/
+Disallow: /scripts/allAirlines.js
+Disallow: /scripts/table.js
+Disallow: /scripts/template.js
+Disallow: /styles/darkmode.css
+Disallow: /styles/impressumStyles.css
+Disallow: /styles/standart.css
+Disallow: /styles/variables.css
+
+

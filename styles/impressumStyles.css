@@ -1,0 +1,119 @@
+
+/* ####################################### */
+/* this classes are only used in Impressum */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*position: relative;*/
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h1Impressum, .h2Impressum {
+    color: darkblue;
+}
+
+.contentWidthImpressum {
+    box-sizing: border-box;
+    max-width: var(--maxWidth);
+    width: 100%;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.impressum {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* ####################################### */
+
+.header {
+    height: 100px;
+    background-color: var(--backgroundColorHeaderDay);
+    display: flex;
+    border-bottom: solid 6px var(--borderColorHeaderFooter);
+    align-items: center;
+}
+
+.innerHeader {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.innerHeader a:hover {
+    color: whitesmoke;
+}
+
+.headerImpressum {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: var(--backgroundColorHeader);
+    border-bottom: solid;
+    border-color: var(--borderColorHeaderFooter);
+}
+
+.headerImpressum img {
+    height: 80px;
+    padding-left: 24px;
+}
+
+.headerImpressum a {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    gap: 20px;
+    color: white;
+}
+
+/* ####################################### */
+
+.footer {
+    height: 100px;
+    background-color: var(--backgroundColorFooterDay);
+    display: flex;
+    align-items: center;
+    border-top: solid 6px var(--borderColorHeaderFooter);
+}
+
+.innerFooter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.innerFooter a:hover {
+    color: whitesmoke;
+}
+
+.footerImpressum {
+    height: 100px;
+    background-color: var(--backgroundColorFooter);
+    display: flex;
+    align-items: center;
+    border-top: solid;
+    border-color: var(--borderColorHeaderFooter);
+}
+
+.footerImpressum img {
+    height: 80px;
+    padding-left: 24px;
+}
+
+.footerImpressum a {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    gap: 20px;
+    color: white;
+}
+

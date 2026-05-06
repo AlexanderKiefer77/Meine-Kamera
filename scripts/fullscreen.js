@@ -1,0 +1,23 @@
+
+let elem = document.documentElement; // for Fullscreen Modus
+
+/**
+ *  Open Fullscreen Modus,
+ *  with click on "A319 / A320 / A321 - Tankanschluss Linke Seite"
+ */
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    }
+}
+
+/**
+ *  Close Fullscreen Modus,
+ *  with click on "© Created by Alexander Kiefer"
+ */
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    }
+}
+
