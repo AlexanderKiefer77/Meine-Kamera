@@ -94,6 +94,9 @@ function apps() {
     dynamicContent.innerHTML = `
         <H2>Apps und Webseiten</H2>
 
+        <H3>/www.focustoinfinity.de</H3>
+        <p>Webseite für Michstraßen Infos</p>
+
         <H3>Stellarium</H3>
         <p>App für Planetarium</p>
 
@@ -109,12 +112,26 @@ function apps() {
         <H3>LunaSolCal</H3>
         <p>App für Mondstand</p>
 
+        <H3>npf-Rechner</H3>
+
         <button class="btn marTop" onclick="backBtn()">Zurück</button>
     `
 }
 
 function milkyWay() {
-    console.log('Milchstraße');
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <H2>Milchstraße</H2>
+        <p>manueller Fokus</p>
+        <p>Blende 2.8</p>
+        <p>Bildstabilisator ausschalten</p>
+        <p>ISO relativ hoch einstellen</p>
+        <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
+        <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
 }
 
 function northernLights() {
