@@ -6,10 +6,12 @@
     --heightFooter: 100px;
 
     /* Variables for colors */    
+    --colorHeader: black; /*Font Color Header*/
     --backgroundColorHeaderDay: #FFDD00; /*Header Day*/
     --backgroundColorHeaderDark: #1c5378; /*Header Dark*/
     --backgroundColorMainDay: #0A0203; /*Main Day*/
     --backgroundColorMainDark: #3a3a3a; /*Main Dark*/
+    --colorFooter: whitesmoke; /*Font Color Footer*/
     --backgroundColorFooterDay: #1F191A; /*Footer Day*/
     --backgroundColorFooterDark: #0b450f; /*Footer Dark*/ 
     --borderColorHeaderFooter: #a98d8d7a; /*Border Line Header/Footer*/
