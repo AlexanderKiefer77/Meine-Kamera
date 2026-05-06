@@ -2,6 +2,7 @@
 function technicDatas() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Technische Daten meiner Nikon D5600</h2>
         <p>ISO bis 1600 sehr gut</p>
@@ -27,6 +28,7 @@ function technicDatas() {
 function cameraModi() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Die Verschiedene Kamara Modi</h2>
         <H3>Auto</H3>
@@ -47,6 +49,7 @@ function cameraModi() {
 function tips() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <nav>
             <ul>
@@ -66,6 +69,7 @@ function tips() {
 function depthOfField() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Schärfentiefe</H2>
 
@@ -84,13 +88,14 @@ function depthOfField() {
         <br>
         <H4>Größe vom Objekt ändert sich jeweils</H4>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marTop" onclick="tips()">Zurück</button>
     `
 }
 
 function apps() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Apps und Webseiten</H2>
 
@@ -119,13 +124,14 @@ function apps() {
 
         <H3>npf-Rechner</H3>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marTop" onclick="tips()">Zurück</button>
     `
 }
 
 function milkyWay() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Milchstraße</H2>
         <p>Stativ</p>
@@ -136,24 +142,26 @@ function milkyWay() {
         <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
         <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marTop" onclick="tips()">Zurück</button>
     `
 }
 
 function northernLights() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Polarlichter</H2>
         <p>Bohnensack Folge 219 ab ca. Min.30</p>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marTop" onclick="tips()">Zurück</button>
     `
 }
 
 function fireworks() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Feuerwerk</H2>
         <p>Stativ</p>
@@ -164,20 +172,21 @@ function fireworks() {
         <p>Weißabgleich fest auf ca. 5000 K</p>        
         <p>Belichtungszeit ca. 3-4 sek.</p>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marTop" onclick="tips()">Zurück</button>
     `
 }
 
 function fence() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
     dynamicContent.innerHTML = `
         <H2>Zaun</H2>
         <p>Bei Zaun durch fotografieren,</p>
         <p>Ganz nah ran gehen, reinzoomen, Blende ganz auf.</p>
         <p>Dann sollte der Zaun nicht zu sehen sein.</p>
 
-        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+        <button class="btn marTop" onclick="tips()">Zurück</button>
     `
 }
 

@@ -3,7 +3,7 @@ let elem = document.documentElement; // for Fullscreen Modus
 
 /**
  *  Open Fullscreen Modus,
- *  with click on "A319 / A320 / A321 - Tankanschluss Linke Seite"
+ *  with click on h1
  */
 function openFullscreen() {
     if (elem.requestFullscreen) {

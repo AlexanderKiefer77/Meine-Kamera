@@ -15,3 +15,7 @@ function backBtn() {
     dynamicContent.classList.add("d_none");
     content.classList.remove("d_none");
 }
+
+function subBackBtn() {
+    
+}
