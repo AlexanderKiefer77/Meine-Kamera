@@ -54,7 +54,7 @@ function objective() {
         <nav>
             <ul>
                 <li><button class="btn" onclick="sigma()">Sigma 17-70</button></li>
-                <li><button class="btn" onclick="apps()">Nikon AF-P Nikkor 18-55 mm F3.5-5.6G DX VR</button></li>
+                <li><button class="btn" onclick="nikon()">Nikon 18-55</button></li>
                 <li><button class="btn" onclick="milkyWay()">Tamron AF 70-300 F4-5.6 Di Macro (1:2) A17</button></li>
             </ul>
         </nav>
@@ -85,6 +85,9 @@ function sigma() {
         <H3>Autofokus:</H3>
         <p>Fokusmotor im Objektiv (Ultraschallmotor)</p>
 
+        <H3>Innenfokussierung:</H3>
+        <p>nein</p>
+
         <H3>Linsensystem:</H3>
         <p>16 Linsen in 14 Gruppen inkl. ED und asphärische Linsen</p>
 
@@ -94,6 +97,9 @@ function sigma() {
         <H3>Naheinstellgrenze:</H3>
         <p>22 cm</p>
 
+        <H3>Größter Abbildungsmaßstab:</H3>
+        <p>1:2,9</p>
+
         <H3>Filtergewinde:</H3>
         <p>72 mm</p>
 
@@ -102,6 +108,57 @@ function sigma() {
 
         <H3>Gewicht:</H3>
         <p>470 g</p>
+        
+
+        <button class="btn marTop" onclick="objective()">Zurück</button>
+    `
+}
+
+function nikon() {
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
+    dynamicContent.innerHTML = `
+        <H2>Nikon AF-P Nikkor 18-55 mm F3.5-5.6G DX VR</H2>
+        
+        <H3>Brennweitenbereich:</H3>
+        <p>18-55 mm</p>
+
+        <H3>Lichtstärke:</H3>
+        <p>F3,5 bis F5,6</p>
+
+        <H3>Kleinste Blendenöffnung:</H3>
+        <p>F38</p>
+
+        <H3>Anzahl Blendenlamellen:</H3>
+        <p>7</p>
+
+        <H3>Autofokus:</H3>
+        <p>Fokusmotor im Objektiv</p>
+
+        <H3>Innenfokussierung:</H3>
+        <p>ja</p>
+
+        <H3>Linsensystem:</H3>
+        <p>12 Linsen in 9 Gruppen inkl. asphärische Linse(n)</p>
+
+        <H3>Bildstabilisator:</H3>
+        <p>ja</p>
+
+        <H3>Naheinstellgrenze:</H3>
+        <p>25 cm</p>
+
+        <H3>Größter Abbildungsmaßstab:</H3>
+        <p>1:2,6</p>
+
+        <H3>Filtergewinde:</H3>
+        <p>55 mm</p>
+
+        <H3>Abmessungen (Ø x Länge):</H3>
+        <p>65 x 63 mm</p>
+
+        <H3>Gewicht:</H3>
+        <p>205 g</p>
         
 
         <button class="btn marTop" onclick="objective()">Zurück</button>
