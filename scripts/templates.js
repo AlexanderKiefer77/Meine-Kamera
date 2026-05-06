@@ -43,3 +43,47 @@ function cameraModi() {
         <button class="btn marTop" onclick="backBtn()">Zurück</button>
     `
 }
+
+function tips() {
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <nav>
+            <ul>
+                <li><button class="btn" onclick="depthOfField()">Schärfentiefe</button></li>
+                <li><button class="btn" onclick="apps()">Apps</button></li>
+                <li><button class="btn" onclick="milkyWay()">Milchstraße</button></li>
+                <li><button class="btn" onclick="northernLights()">Polarlichter</button></li>
+                <li><button class="btn" onclick="fireworks()">Feuerwerk</button></li>
+                <li><button class="btn" onclick="fence()">Zaun</button></li>
+            </ul>
+        </nav>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
+}
+
+function depthOfField() {
+    console.log('Schärfentiefe');
+}
+
+function apps() {
+    console.log('Apps');
+}
+
+function milkyWay() {
+    console.log('Milchstraße');
+}
+
+function northernLights() {
+    console.log('Polarlichter');
+}
+
+function fireworks() {
+    console.log('Feuerwerk');
+}
+
+function fence() {
+    console.log('Zaun');
+}
+
