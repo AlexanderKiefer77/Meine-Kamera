@@ -1,6 +1,6 @@
 /* ######################################################## */
 .header {
-    height: 100px;
+    height: var(--heightHeader);
     background-color: var(--backgroundColorHeaderDay);
     display: flex;
     border-bottom: solid 6px var(--borderColorHeaderFooter);
@@ -20,13 +20,24 @@
 /* ######################################################## */
 .main {
     background-color: var(--backgroundColorMainDay);
-    min-height: calc(100dvh - 220px);
+    min-height: calc(100dvh - var(--heightHeader) - var(--heightFooter));
     width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.content img {
+    width: 250px;
+    border-radius: 16px;
+    margin-top: 32px;
 }
 
 /* ######################################################## */
 .footer {
-    height: 100px;
+    height: var(--heightFooter);
     background-color: var(--backgroundColorFooterDay);
     display: flex;
     align-items: center;
