@@ -89,7 +89,28 @@ function depthOfField() {
 }
 
 function apps() {
-    console.log('Apps');
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = `
+        <H2>Apps und Webseiten</H2>
+
+        <H3>Stellarium</H3>
+        <p>App für Planetarium</p>
+
+        <H3>Viewfindr</H3>
+        <p>Wettervorhersage für Fotografen</p>
+
+        <H3>Lichtverschmutzung</H3>
+        <p>www.lightpollutionmap.info</p>
+        <p>auch als App</p>
+
+        <H3>PhotoPills</H3>
+
+        <H3>LunaSolCal</H3>
+        <p>App für Mondstand</p>
+
+        <button class="btn marTop" onclick="backBtn()">Zurück</button>
+    `
 }
 
 function milkyWay() {

@@ -85,16 +85,12 @@ nav ul {
     border-radius: 12px;
     cursor: pointer;
     font-size: 18px;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
     background-color: var(--backgroundColorImgHover);
-    transform: scale(0.95);
-}
-
-.btn:active {
-    transform: scale(0.9);
+    transform: scale(0.97);
 }
 
 /* ######################################################## */
@@ -159,7 +155,3 @@ h3 {
     display: none;
 }
 
-button:hover,
-button:focus {
-    opacity: 0.8;
-}
