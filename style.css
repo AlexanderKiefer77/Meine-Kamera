@@ -17,14 +17,17 @@
 }
 
 h1 {
+    font-size: clamp(2rem, 6vw, 5rem);
     cursor: pointer;
 }
 
 /* ######################################################## */
 .main {
     background-color: var(--bgColorMainDay);
-    min-height: calc(100dvh - var(--heightHeader) - var(--heightFooter));
+    /* height: calc(100dvh - var(--heightHeader) - var(--heightFooter)); */    
+    flex: 1; /* important for scrollability of main */    
     width: 100%;
+    overflow-y: auto; /* important for scrollability of main */
 }
 
 .content {
@@ -32,21 +35,20 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    overflow-y: auto;
+    gap: clamp(16px, 1vw,40px);
+    padding: clamp(16px, 6vw,32px) 0;
 }
 
 
 /* ######################################################## */
 .imgCamera {
-    width: 300px;
+    width: clamp(200px, 30vw, 360px);
     border-radius: 16px;
     background-color: var(--bgColorImg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 32px;
-    padding: 32px 32px 16px 32px;
+    padding: clamp(12px, 3%, 32px) clamp(12px, 3%, 32px) clamp(10px, 6%, 16px) clamp(12px, 3%, 32px);
 }
 
 .imgCamera:hover {
@@ -64,10 +66,11 @@ h1 {
 }
 
 .imgCamera figcaption {
-    margin-top: 16px;
+    margin-top: clamp(10px, 6%, 16px);
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
+    color: var(--colorFigcaption);
 }
 
 /* ######################################################## */

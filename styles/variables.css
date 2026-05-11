@@ -20,9 +20,9 @@
 
     --borderColorHeaderFooter: #a98d8d7a; /*Border Line Header/Footer*/
 
+    --colorFigcaption: #D4AF37;
     --bgColorImg: #1F191A; /*around the picture*/
     --bgColorImgHover: #322A18; /*around the picture hover*/
     --bgColorBtn: #1F191A;
     --bgColorDynamicContent: rgb(100, 90, 30);
-
 }
