@@ -167,4 +167,9 @@ h3 {
 .d_none {
     display: none;
 }
-
+ 
+/* for favicon */
+.badge {
+    width: 16px;
+    height: 16px;
+}
