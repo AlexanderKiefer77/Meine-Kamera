@@ -1,5 +1,4 @@
 
-
 function templateTechnicDatas() {
     return `
         <H2>Technische Daten meiner Nikon D5600</h2>
@@ -41,24 +40,19 @@ function templateCameraModi() {
     `
 }
 
-function objective() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    headline.innerText = 'Meine Objektive';
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateObjective() {
+    return `
         <nav>
             <ul>
-                <li><button class="btn" onclick="sigma()">Sigma 17-70</button></li>
-                <li><button class="btn" onclick="nikonKit()">Nikon 18-55</button></li>
-                <li><button class="btn" onclick="tamron()">Tamron 70-300</button></li>
+                <li><button class="btn" onclick="showContent('sigma')">Sigma 17-70</button></li>
+                <li><button class="btn" onclick="showContent('nikonKit')">Nikon 18-55</button></li>
+                <li><button class="btn" onclick="showContent('tamron')">Tamron 70-300</button></li>
             </ul>
         </nav>
 
         <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
-
 
 function templateSigma() {
     return `
@@ -104,7 +98,7 @@ function templateSigma() {
         <p>470 g</p>
         
 
-        <button class="btn marBtn" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('objective')">Zurück</button>
     `
 }
 
@@ -152,7 +146,7 @@ function templateNikonKit() {
         <p>205 g</p>
         
 
-        <button class="btn marBtn" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('objective')">Zurück</button>
     `
 }
 
@@ -200,33 +194,27 @@ function templateTamron() {
         <p>435 g</p>
         
 
-        <button class="btn marBtn" onclick="objective()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('objective')">Zurück</button>
     `
 }
 
-
-function tips() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    headline.innerText = 'Meine Tipps';
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateTips() {
+    return `
         <nav>
             <ul>
-                <li><button class="btn" onclick="depthOfField()">Schärfentiefe</button></li>
-                <li><button class="btn" onclick="apps()">Apps</button></li>
-                <li><button class="btn" onclick="milkyWay()">Milchstraße</button></li>
-                <li><button class="btn" onclick="northernLights()">Polarlichter</button></li>
-                <li><button class="btn" onclick="fireworks()">Feuerwerk</button></li>                
-                <li><button class="btn" onclick="fence()">Zaun</button></li>
-                <li><button class="btn" onclick="monitor()">Monitore</button></li>
+                <li><button class="btn" onclick="showContent('depthOfField')">Schärfentiefe</button></li>
+                <li><button class="btn" onclick="showContent('apps')">Apps</button></li>
+                <li><button class="btn" onclick="showContent('milkyWay')">Milchstraße</button></li>
+                <li><button class="btn" onclick="showContent('northernLights')">Polarlichter</button></li>
+                <li><button class="btn" onclick="showContent('fireworks')">Feuerwerk</button></li>                
+                <li><button class="btn" onclick="showContent('fance')">Zaun</button></li>
+                <li><button class="btn" onclick="showContent('monitor')">Monitore</button></li>
             </ul>
         </nav>
 
         <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `
 }
-
 
 function templateDepthOfField() {
     return `
@@ -250,7 +238,7 @@ function templateDepthOfField() {
         <br>
         <H4>Größe vom Objekt ändert sich jeweils</H4>
 
-        <button class="btn marBtn" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -283,7 +271,7 @@ function templateApps() {
 
         <H3>npf-Rechner</H3>
 
-        <button class="btn marBtn" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -298,7 +286,7 @@ function templateMilkyWay() {
         <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
         <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
 
-        <button class="btn marBtn" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -307,7 +295,7 @@ function templateNorthernLights() {
         <H2>Polarlichter</H2>
         <p>Bohnensack Folge 219 ab ca. Min.30</p>
 
-        <button class="btn marBtn" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -322,7 +310,7 @@ function templateFireworks() {
         <p>Weißabgleich fest auf ca. 5000 K</p>        
         <p>Belichtungszeit ca. 3-4 sek.</p>
 
-        <button class="btn marBtn" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -333,7 +321,7 @@ function templateFance() {
         <p>Ganz nah ran gehen, reinzoomen, Blende ganz auf.</p>
         <p>Dann sollte der Zaun nicht zu sehen sein.</p>
 
-        <button class="btn marBtn" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -345,6 +333,6 @@ function templateMonitor() {
         <p>Monitor kalibrieren</p>
         <p>Bohnensack Folge 62</p>
 
-        <button class="btn marBtn" onclick="tips()">Zurück</button>
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
 }

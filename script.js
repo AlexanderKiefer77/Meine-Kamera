@@ -3,6 +3,23 @@ let headline = document.getElementById('headline');
 let content = document.getElementById('content');
 let dynamicContent = document.getElementById('dynamicContent');
 
+const templates = {
+    technicDatas: templateTechnicDatas,
+    cameraModi: templateCameraModi,
+    objective: templateObjective,
+    sigma: templateSigma,
+    nikonKit: templateNikonKit,
+    tamron: templateTamron,
+    tips: templateTips,
+    depthOfField: templateDepthOfField,
+    apps: templateApps,
+    milkyWay: templateMilkyWay,
+    northernLights: templateNorthernLights,
+    fireworks: templateFireworks,
+    fance: templateFance,
+    monitor: templateMonitor,
+};
+
 /**
  * dark mode button
  */
@@ -21,98 +38,122 @@ function backBtn() {
 /* ############################# */
 
 
-function technicDatas() {
+function showContent(name, title = '') {
+    const template = templates[name];
+
+    if (!template) {
+        console.error(`Template "${name}" nicht gefunden`);
+        return;
+    }
+
+    if (title) {
+        headline.innerText = title;
+    }
+
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateTechnicDatas();
+    dynamicContent.innerHTML = template();
 }
 
-function cameraModi() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateCameraModi();
-}
+// function technicDatas() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateTechnicDatas();
+// }
 
-function sigma() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateSigma();
-}
+// function cameraModi() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateCameraModi();
+// }
 
-function nikonKit() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateNikonKit();
-}
+// function objective() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     headline.innerText = 'Meine Objektive';
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateObjective();
+// }
 
-function tamron() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateTamron();
-}
+// function sigma() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateSigma();
+// }
 
-function depthOfField() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateDepthOfField();
-}
+// function tips() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     headline.innerText = 'Meine Tipps';
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateTips();
+// }
 
-function apps() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateApps();
-}
+// function nikonKit() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateNikonKit();
+// }
 
-function milkyWay() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateMilkyWay();
-}
+// function tamron() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateTamron();
+// }
 
-function northernLights() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateNorthernLights();
-}
+// function depthOfField() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateDepthOfField();
+// }
 
-function fireworks() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateFireworks();
-}
+// function apps() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateApps();
+// }
 
-function fence() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateFance();
-}
+// function milkyWay() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateMilkyWay();
+// }
 
-function monitor() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = templateMonitor();   
-}
+// function northernLights() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateNorthernLights();
+// }
 
+// function fireworks() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateFireworks();
+// }
 
+// function fence() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateFance();
+// }
 
-
-
-
-
-
-
+// function monitor() {
+//     content.classList.add("d_none");
+//     dynamicContent.classList.remove("d_none");
+//     dynamicContent.innerHTML = '';
+//     dynamicContent.innerHTML = templateMonitor();
+// }
 
 
 // favicon
