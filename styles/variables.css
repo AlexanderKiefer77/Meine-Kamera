@@ -8,15 +8,15 @@
     /* Variables for colors */    
     --colorHeader: black; /*Font Color Header*/
     --bgColorHeaderDay: #FFDD00; /*Header Day*/
-    --bgColorHeaderDark: #1c5378; /*Header Dark*/
-
+    --bgColorHeaderDark: #D4AF37; /*Header Dark #1c5378 */
+ 
     --colorMain: white; /*Font Color Main*/
     --bgColorMainDay: #0A0203; /*Main Day*/
     --bgColorMainDark: #3a3a3a; /*Main Dark*/
 
     --colorFooter: black; /*Font Color Footer*/
     --bgColorFooterDay: #FFDD00; /*Footer Day*/
-    --bgColorFooterDark: #0b450f; /*Footer Dark*/ 
+    --bgColorFooterDark: #D4AF37; /*Footer Dark #0b450f */ 
 
     --borderColorHeaderFooter: #a98d8d7a; /*Border Line Header/Footer*/
 

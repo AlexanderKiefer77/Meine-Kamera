@@ -33,13 +33,16 @@ a {
     padding-bottom: 32px;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 /* ####################################### */
 
 .header {
     height: 100px;
-    background-color: var(--backgroundColorHeaderDay);
+    background-color: var(--bgColorHeaderDay);
     display: flex;
     border-bottom: solid 6px var(--borderColorHeaderFooter);
     align-items: center;
@@ -58,7 +61,7 @@ a {
     display: flex;
     align-items: center;
     height: 100px;
-    background-color: var(--backgroundColorHeader);
+    background-color: var(--bgColorHeader);
     border-bottom: solid;
     border-color: var(--borderColorHeaderFooter);
 }
@@ -80,7 +83,7 @@ a {
 
 .footer {
     height: 100px;
-    background-color: var(--backgroundColorFooterDay);
+    background-color: var(--bgColorFooterDay);
     display: flex;
     align-items: center;
     border-top: solid 6px var(--borderColorHeaderFooter);
@@ -97,7 +100,7 @@ a {
 
 .footerImpressum {
     height: 100px;
-    background-color: var(--backgroundColorFooter);
+    background-color: var(--bgColorFooter);
     display: flex;
     align-items: center;
     border-top: solid;
