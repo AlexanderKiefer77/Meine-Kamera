@@ -229,8 +229,9 @@ function tips() {
                 <li><button class="btn" onclick="apps()">Apps</button></li>
                 <li><button class="btn" onclick="milkyWay()">Milchstraße</button></li>
                 <li><button class="btn" onclick="northernLights()">Polarlichter</button></li>
-                <li><button class="btn" onclick="fireworks()">Feuerwerk</button></li>
+                <li><button class="btn" onclick="fireworks()">Feuerwerk</button></li>                
                 <li><button class="btn" onclick="fence()">Zaun</button></li>
+                <li><button class="btn" onclick="monitor()">Monitore</button></li>
             </ul>
         </nav>
 
@@ -365,3 +366,17 @@ function fence() {
     `
 }
 
+function monitor() {
+    content.classList.add("d_none");
+    dynamicContent.classList.remove("d_none");
+    dynamicContent.innerHTML = '';
+    dynamicContent.innerHTML = `
+        <H2>Monitor</H2>
+        <p>kalibrierte Monitore, z.B. Eizo ColorEdge</p>
+        <p>oder</p>
+        <p>Monitor kalibrieren</p>
+        <p>Bohnensack Folge 62</p>
+
+        <button class="btn marBtn" onclick="tips()">Zurück</button>
+    `
+}
