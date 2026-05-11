@@ -1,9 +1,7 @@
 
-function technicDatas() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+
+function templateTechnicDatas() {
+    return `
         <H2>Technische Daten meiner Nikon D5600</h2>
         <p>ISO bis 1600 sehr gut</p>
         <p>ISO bis 3200 gut</p>
@@ -25,11 +23,8 @@ function technicDatas() {
     `;
 }
 
-function cameraModi() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateCameraModi() {
+    return `
         <H2>Die Verschiedene Kamara Modi</h2>
         <H3>Auto</H3>
         <p>Automatik-Modus</p>
@@ -55,7 +50,7 @@ function objective() {
         <nav>
             <ul>
                 <li><button class="btn" onclick="sigma()">Sigma 17-70</button></li>
-                <li><button class="btn" onclick="nikon()">Nikon 18-55</button></li>
+                <li><button class="btn" onclick="nikonKit()">Nikon 18-55</button></li>
                 <li><button class="btn" onclick="tamron()">Tamron 70-300</button></li>
             </ul>
         </nav>
@@ -64,11 +59,9 @@ function objective() {
     `
 }
 
-function sigma() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+
+function templateSigma() {
+    return `
         <H2>Sigma 17-70 mm F2.8-4 DC Makro OS HSM Contemporary</H2>
         
         <H3>Brennweitenbereich:</H3>
@@ -115,11 +108,8 @@ function sigma() {
     `
 }
 
-function nikon() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateNikonKit() {
+    return `
         <H2>Nikon AF-P Nikkor 18-55 mm F3.5-5.6G DX VR</H2>
         
         <H3>Brennweitenbereich:</H3>
@@ -166,11 +156,8 @@ function nikon() {
     `
 }
 
-function tamron() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateTamron() {
+    return `
         <H2>Tamron AF 70-300 F4-5.6 Di Macro 1:2 A17</H2>
         
         <H3>Brennweitenbereich:</H3>
@@ -217,6 +204,7 @@ function tamron() {
     `
 }
 
+
 function tips() {
     content.classList.add("d_none");
     dynamicContent.classList.remove("d_none");
@@ -239,11 +227,9 @@ function tips() {
     `
 }
 
-function depthOfField() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+
+function templateDepthOfField() {
+    return `
         <H2>Schärfentiefe</H2>
 
         <H3>Blende</H3>
@@ -268,11 +254,8 @@ function depthOfField() {
     `
 }
 
-function apps() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateApps() {
+    return `
         <H2>Apps und Webseiten</H2>
 
         <H3>/www.focustoinfinity.de</H3>
@@ -304,11 +287,8 @@ function apps() {
     `
 }
 
-function milkyWay() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateMilkyWay() {
+    return `
         <H2>Milchstraße</H2>
         <p>Stativ</p>
         <p>manueller Fokus</p>
@@ -322,11 +302,8 @@ function milkyWay() {
     `
 }
 
-function northernLights() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateNorthernLights() {
+    return `
         <H2>Polarlichter</H2>
         <p>Bohnensack Folge 219 ab ca. Min.30</p>
 
@@ -334,11 +311,8 @@ function northernLights() {
     `
 }
 
-function fireworks() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateFireworks() {
+    return `
         <H2>Feuerwerk</H2>
         <p>Stativ</p>
         <p>manueller Fokus</p>
@@ -352,11 +326,8 @@ function fireworks() {
     `
 }
 
-function fence() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateFance() {
+    return `
         <H2>Zaun</H2>
         <p>Bei Zaun durch fotografieren,</p>
         <p>Ganz nah ran gehen, reinzoomen, Blende ganz auf.</p>
@@ -366,11 +337,8 @@ function fence() {
     `
 }
 
-function monitor() {
-    content.classList.add("d_none");
-    dynamicContent.classList.remove("d_none");
-    dynamicContent.innerHTML = '';
-    dynamicContent.innerHTML = `
+function templateMonitor() {
+    return `
         <H2>Monitor</H2>
         <p>kalibrierte Monitore, z.B. Eizo ColorEdge</p>
         <p>oder</p>
