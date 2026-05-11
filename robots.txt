@@ -4,8 +4,8 @@ Disallow: /style.css
 Disallow: /script.js
 Disallow: /assets/bootstrap/
 Disallow: /assets/img/
-Disallow: /scripts/table.js
-Disallow: /scripts/template.js
+Disallow: /scripts/fullscreen.js
+Disallow: /scripts/templates.js
 Disallow: /styles/darkmode.css
 Disallow: /styles/impressumStyles.css
 Disallow: /styles/standart.css

@@ -26,15 +26,42 @@ function templateCameraModi() {
     return `
         <H2>Die Verschiedene Kamara Modi</h2>
         <H3>Auto</H3>
-        <p>Automatik-Modus</p>
+        <H4>Automatik-Modus</H4>
+        <p>Die Kamera wählt automatisch die Blende, die Verschlusszeit und die ISO aus.</p>
+
         <H3>M</H3>
-        <p>Manueller-Modus</p>
+        <H4>Manueller-Modus</H4>
+        <p>Die Blende, die Verschlusszeit und die ISO muss selbstständig eingestellt werden.</p>
+        <p>Die Kamera übernimmt keine automatische Belichtungsentscheidung.</p>
+
         <H3>A</H3>
-        <p>Zeitautomatik</p>
-        <H3>S</H3>
-        <p>Blendenautomatik</p>
+        <H4>Blendenvorwahl</H4>
+        <p>( Aperture Priority )</p>
+        <p>( nennt sich <b><i>Zeitautomatik</i></b> auf Display )</p>
+        <p>Du stellst die Blende selbst ein,</p>
+        <p>Die Kamera wählt automatisch die passende Verschlusszeit dazu.</p>
+        <p>Die ISO kann manuell vorgewählt werden, oder auf "Auto-ISO" stellen.</p>
+
+        <H3>S</H3>        
+        <H4>Zeitvorwahl</H4>
+        <p>( Shutter Priority )</p>
+        <p>( nennt sich <b><i>Blendenautomatik</i></b> auf Display )</p>
+        <p>Du stellst die Verschlusszeit selbst ein,</p>
+        <p>Die Kamera wählt automatisch die passende Blende.</p>
+        <p>Die ISO kann manuell vorgewählt werden, oder auf "Auto-ISO" stellen.</p>
+
         <H3>P</H3>
-        <p>Programmautomatik mit Programmverschiebung</p>
+        <H4>Programmautomatik</H4>
+        <p>intelligenter Automatikmodus mit Kontrolle</p>
+        <p>Die Kamera wählt Blende und Verschlusszeit automatisch.</p>
+        <p>Im P-Modus gibt es normalerweise eine automatische Kombination</p>
+        <p>Du bekommst eine korrekt belichtete Grund-Einstellung.</p>
+        <p>Du kannst aber trotzdem noch eingreifen.</p>
+        <p>ISO einstellen (manuell oder Auto ISO)</p>
+        <p>Belichtungskorrektur (+/-) nutzen.</p>
+        <p>Mit dem Einstellrad eine „Programmverschiebung“ (Program Shift) machen:</p>
+        <p>mehr Hintergrundunschärfe → größere Blende</p>
+        <p>kürzere Zeit → Bewegung einfrieren</p>
 
         <button class="btn marBtn" onclick="backBtn()">Zurück</button>
     `

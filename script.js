@@ -35,9 +35,7 @@ function backBtn() {
     headline.innerText = 'Meine Kamera';
 }
 
-/* ############################# */
-
-
+/* ######################################################## */
 function showContent(name, title = '') {
     const template = templates[name];
 
