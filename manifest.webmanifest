@@ -1,0 +1,17 @@
+{
+    "name": "Meine Nikon",
+    "short_name": "Meine Nikon",
+    "theme_color": "#d4af37",
+    "background_color": "#0a0203",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/assets/img/Own_3.jpg",
+            "sizes": "256x256",
+            "type": "image/jpg"
+        }
+    ]
+}

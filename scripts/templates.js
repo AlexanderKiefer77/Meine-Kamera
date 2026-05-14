@@ -358,6 +358,7 @@ function templateMonitor() {
         <p>kalibrierte Monitore, z.B. Eizo ColorEdge</p>
         <p>oder</p>
         <p>Monitor kalibrieren</p>
+        <p>----------</p>
         <p>Bohnensack Folge 62</p>
 
         <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
