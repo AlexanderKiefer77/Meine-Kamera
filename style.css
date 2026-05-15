@@ -24,10 +24,12 @@ h1 {
 /* ######################################################## */
 .main {
     background-color: var(--bgColorMainDay);
-    /* height: calc(100dvh - var(--heightHeader) - var(--heightFooter)); */    
-    flex: 1; /* important for scrollability of main */    
+    /* height: calc(100dvh - var(--heightHeader) - var(--heightFooter)); */
+    flex: 1;
+    /* important for scrollability of main */
     width: 100%;
-    overflow-y: auto; /* important for scrollability of main */
+    overflow-y: auto;
+    /* important for scrollability of main */
 }
 
 .content {
@@ -35,10 +37,24 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(16px, 1vw,40px);
-    padding: clamp(16px, 6vw,32px) 0;
+    gap: clamp(16px, 1vw, 40px);
+    padding: clamp(16px, 6vw, 32px) 0;
 }
 
+.meine-tabelle {
+    border-collapse: collapse;
+}
+
+.meine-tabelle,
+.meine-tabelle td,
+.meine-tabelle th {
+    border: 1px solid black;
+}
+
+.meine-tabelle td,
+.meine-tabelle th {
+    padding: 8px;
+}
 
 /* ######################################################## */
 .imgCamera {
@@ -170,7 +186,7 @@ h3 {
 .d_none {
     display: none;
 }
- 
+
 /* for favicon */
 .badge {
     width: 16px;

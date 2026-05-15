@@ -230,8 +230,10 @@ function templateTips() {
         <nav>
             <ul>
                 <li><button class="btn" onclick="showContent('depthOfField')">Schärfentiefe</button></li>
-                <li><button class="btn" onclick="showContent('apps')">Apps</button></li>
                 <li><button class="btn" onclick="showContent('milkyWay')">Milchstraße</button></li>
+                <li><button class="btn" onclick="showContent('apps')">Apps</button></li>
+                <li><button class="btn" onclick="showContent('ndFilter')">ND Filter</button></li>
+                <li><button class="btn" onclick="showContent('ndFilterTabelle')">ND Filter Tabelle</button></li>
                 <li><button class="btn" onclick="showContent('northernLights')">Polarlichter</button></li>
                 <li><button class="btn" onclick="showContent('fireworks')">Feuerwerk</button></li>                
                 <li><button class="btn" onclick="showContent('fance')">Zaun</button></li>
@@ -264,6 +266,21 @@ function templateDepthOfField() {
 
         <br>
         <H4>Größe vom Objekt ändert sich jeweils</H4>
+
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+    `
+}
+
+function templateMilkyWay() {
+    return `
+        <H2>Milchstraße</H2>
+        <p>Stativ</p>
+        <p>manueller Fokus</p>
+        <p>Blende f2.8</p>
+        <p>Bildstabilisator ausschalten</p>
+        <p>ISO relativ hoch einstellen</p>
+        <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
+        <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
 
         <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
@@ -302,16 +319,177 @@ function templateApps() {
     `
 }
 
-function templateMilkyWay() {
+function templateNdFilter() {
     return `
-        <H2>Milchstraße</H2>
-        <p>Stativ</p>
-        <p>manueller Fokus</p>
-        <p>Blende f2.8</p>
-        <p>Bildstabilisator ausschalten</p>
-        <p>ISO relativ hoch einstellen</p>
-        <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
-        <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
+        <h2>ND-Filter</h2>
+        <p>Überlegen, ob eine Langzeitbelichtung sinnvoll ist,</p>
+        <p>z.B. ob es keine Äste gibt, die sich dann mit bewegen.</p>
+
+        <h3>Autofokus</h3>
+        <p>Ohne den Filter den Autofokus setzen, das Objektiv auf manuellen Fokus umschalten, und dann den Filter
+            montieren.</p>
+
+        <h3>Weißabgleich</h3>
+        <p>manuell setzen, z.B. Tageslicht.</p>
+
+        <h3>Verschlusszeit</h3>
+        <p>Ohne Filter die gewünschte Verschlusszeit bestimmen. Anhand der Tabelle die Belichtungszeit umrechnen,
+            und dann den Filter montieren.</p>
+
+        <h3>Mehrere ND-Filter zusammen, multiplizieren sich.</h3>
+        <p>z.B. 64x und 1.000x = 64.000x</p>
+        <p>bei extrem langen Belichtungszeiten, können Menschenmengen unsichtbar gemacht werden.</p>
+
+        <h3>ND8</h3>
+        <p>Er reduziert die einfallende Lichtmenge um 3 Blendenstufen.</p>
+        <p>Der ND8 Filter ist ideal für Aufnahmen in den Morgen- und Abendstunden, wenn das Licht weicher, aber
+            dennoch relativ hell ist.</p>
+        <p>Er ermöglicht dadurch längere Belichtungszeiten - ideal für stimmungsvolle Aufnahmen mit
+            Bewegungsunschärfe, z.B. bei fließemdem Wasser, ziehenden Wolken oder belebten Straßen.</p>
+
+        <h3>ND64</h3>
+        <p>Er reduziert die einfallende Lichtmenge um 6 Blendenstufen.</p>
+        <p>Der ND64 Filter ist der Allrounder unter den ND-Filtern.</p>
+        <p>Er bietet die ideale Balance zwischen Lichtkontrolle und
+            Flexibilität und ist in den meisten Tageszeiten problemlos einsetzbar.</p>
+        <p>Er ermöglicht längere Belichtungszeiten, weichere Bewegungsunschärfe, z.B. bei Wasser, Wolken oder
+            Verkehr und sorgt für eine ausgewogene Belichtung auch bei wechselnden Lichtverhältnissen</p>
+
+        <h3>ND1000</h3>
+        <p>Er reduziert die einfallende Lichtmenge um 10 Blendenstufen.</p>
+        <p>Der ND1000 Filter ist die richtige Wahl, wenn du extrem lange Belichtungszeiten realisieren möchtest -
+            selbst bei starkem Sonnenlicht.</p>
+        <p>Er ermöglicht Belichtungszeiten von einigen Sekunden bei voller Sonne oder bis zu 30 Sekunden bei
+            bedecktem Himmel.</p>
+        <p>Ideal für kreative Langzeitbelichtungen von Wasser, Wolken, Menschenmengen oder urbanen Szenen.</p>
+        
+        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+    `
+}
+
+function templateNdFilterTabelle() {
+    return `
+        <h2>ND-Filter Belichtungszeit Umrechnungstabelle</h2>
+        <table class="meine-tabelle">
+            <thead>
+                <tr>
+                    <th>Belichtungszeit</th>
+                    <th>ND8</th>
+                    <th>ND64</th>
+                    <th>ND1000</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1/4000</td>
+                    <td>1/500</td>
+                    <td>1/50</td>
+                    <td>1/4</td>
+                </tr>
+                <tr>
+                    <td>1/2000</td>
+                    <td>1/250</td>
+                    <td>1/30</td>
+                    <td>1/2</td>
+                </tr>
+                <tr>
+                    <td>1/1000</td>
+                    <td>1/125</td>
+                    <td>1/15</td>
+                    <td>1s</td>
+                </tr>
+                <tr>
+                    <td>1/500</td>
+                    <td>1/60</td>
+                    <td>1/8</td>
+                    <td>2s</td>
+                </tr>
+                <tr>
+                    <td>1/250</td>
+                    <td>1/30</td>
+                    <td>1/4</td>
+                    <td>4 Sek.</td>
+                </tr>
+                <tr>
+                    <td>1/125</td>
+                    <td>1/15</td>
+                    <td>1/2</td>
+                    <td>8s</td>
+                </tr>
+                <tr>
+                    <td>1/60</td>
+                    <td>1/8</td>
+                    <td>1s</td>
+                    <td>16s</td>
+                </tr>
+                <tr>
+                    <td>1/30</td>
+                    <td>1/4</td>
+                    <td>2s</td>
+                    <td>32s</td>
+                </tr>
+                <tr>
+                    <td>1/15</td>
+                    <td>1/2</td>
+                    <td>4s</td>
+                    <td>1m 6s</td>
+                </tr>
+                <tr>
+                    <td>1/8</td>
+                    <td>1s</td>
+                    <td>8s</td>
+                    <td>2m 5s</td>
+                </tr>
+                <tr>
+                    <td>1/4</td>
+                    <td>2s</td>
+                    <td>16s</td>
+                    <td>4m 10s</td>
+                </tr>
+                <tr>
+                    <td>1/2</td>
+                    <td>4s</td>
+                    <td>32s</td>
+                    <td>8m 20s</td>
+                </tr>
+                <tr>
+                    <td>1 Sek.</td>
+                    <td>8s</td>
+                    <td>1m 4s</td>
+                    <td>16m 40s</td>
+                </tr>
+                <tr>
+                    <td>2 Sek.</td>
+                    <td>16s</td>
+                    <td>2m 8s</td>
+                    <td>33m 20s</td>
+                </tr>
+                <tr>
+                    <td>4 Sek.</td>
+                    <td>32s</td>
+                    <td>4m 16s</td>
+                    <td>1h 6m 40s</td>
+                </tr>
+                <tr>
+                    <td>8 Sek.</td>
+                    <td>1m 4s</td>
+                    <td>8m 32s</td>
+                    <td>2h 13m 20s</td>
+                </tr>
+                <tr>
+                    <td>15 Sek.</td>
+                    <td>2m</td>
+                    <td>16m</td>
+                    <td>4h 26m</td>
+                </tr>
+                <tr>
+                    <td>30 Sek.</td>
+                    <td>4m</td>
+                    <td>32m</td>
+                    <td>8h 53m</td>
+                </tr>
+            </tbody>
+        </table>
 
         <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
     `
