@@ -18,7 +18,7 @@ function templateTechnicDatas() {
         <p>Belichtungskorrektur: -5,0 bis +5,0 EV mit Schrittgröße von 1/3 bis 1/2 EV</p>
         <p>Serienaufnahmen: 5,0 Bilder/s bei höchster Auflösung, 4 Bilder pro Sekunde (14-Bit RAW)</p>
         
-        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="backBtn()">Zurück</button>
     `;
 }
 
@@ -63,7 +63,7 @@ function templateCameraModi() {
         <p>mehr Hintergrundunschärfe → größere Blende</p>
         <p>kürzere Zeit → Bewegung einfrieren</p>
 
-        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -77,7 +77,7 @@ function templateObjective() {
             </ul>
         </nav>
 
-        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="backBtn()">Zurück</button>
     `
 }
 
@@ -125,7 +125,7 @@ function templateSigma() {
         <p>470 g</p>
         
 
-        <button class="btn marBtn" onclick="showContent('objective')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('objective')">Zurück</button>
     `
 }
 
@@ -173,7 +173,7 @@ function templateNikonKit() {
         <p>205 g</p>
         
 
-        <button class="btn marBtn" onclick="showContent('objective')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('objective')">Zurück</button>
     `
 }
 
@@ -221,7 +221,7 @@ function templateTamron() {
         <p>435 g</p>
         
 
-        <button class="btn marBtn" onclick="showContent('objective')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('objective')">Zurück</button>
     `
 }
 
@@ -229,11 +229,12 @@ function templateTips() {
     return `
         <nav>
             <ul>
-                <li><button class="btn" onclick="showContent('depthOfField')">Schärfentiefe</button></li>
-                <li><button class="btn" onclick="showContent('milkyWay')">Milchstraße</button></li>
-                <li><button class="btn" onclick="showContent('apps')">Apps</button></li>
+                <li><button class="btn" onclick="showContent('apertureStops')">Blendenstufen</button></li>
+                <li><button class="btn" onclick="showContent('depthOfField')">Schärfentiefe</button></li>                
                 <li><button class="btn" onclick="showContent('ndFilter')">ND Filter</button></li>
                 <li><button class="btn" onclick="showContent('ndFilterTabelle')">ND Filter Tabelle</button></li>
+                <li><button class="btn" onclick="showContent('apps')">Apps</button></li>
+                <li><button class="btn" onclick="showContent('milkyWay')">Milchstraße</button></li>
                 <li><button class="btn" onclick="showContent('northernLights')">Polarlichter</button></li>
                 <li><button class="btn" onclick="showContent('fireworks')">Feuerwerk</button></li>                
                 <li><button class="btn" onclick="showContent('fance')">Zaun</button></li>
@@ -241,7 +242,77 @@ function templateTips() {
             </ul>
         </nav>
 
-        <button class="btn marBtn" onclick="backBtn()">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="backBtn()">Zurück</button>
+    `
+}
+
+function templateApertureStops() {
+    return `
+    <h2>Blendenstufen</h2>
+            <h3>f/1,4, f/2, f/2,8, f/4, f/5,6, f/8, f/11, f/16</h3>
+            <p>Eine Erhöhung der Blendenzahl halbiert das in das Objektiv einfallende
+                Licht, während jede Verringerung der Blendenzahl das Licht verdoppelt.</p>
+            <p>Je niedriger die Blendenstufe, desto größer ist die Blendenöffnung und mehr Licht fällt ein.</p>
+            <p>Je höher die Blendenstufe, desto kleiner die Blendenöffnung und weniger Licht fällt ein </p>
+
+    <table class="meine-tabelle">
+        <thead>
+            <tr>
+                <th>Fotografie-Art</th>
+                <th>Empfohlene Blende</th>
+                <th>Beschreibung</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Landschaftsfotografie</td>
+                <td>f/8 bis f/16</td>
+                <td>Große Schärfentiefe für Schärfe in der gesamten Szene</td>
+            </tr>
+            <tr>
+                <td>Familienporträtfotografie</td>
+                <td>f/4 bis f/8</td>
+                <td>Alle Familienmitglieder sind im Fokus, während der Hintergrund unscharf bleibt</td>
+            </tr>
+            <tr>
+                <td>Porträtfotografie</td>
+                <td>f/1.4 bis f/5.6</td>
+                <td>Geringe Schärfentiefe zur Isolierung des Motivs</td>
+            </tr>
+            <tr>
+                <td>Makrofotografie</td>
+                <td>f/2.8 bis f/5.6</td>
+                <td>Gleichgewicht zwischen geringer Schärfentiefe und Schärfe</td>
+            </tr>
+            <tr>
+                <td>Straßenfotografie</td>
+                <td>f/5.6 bis f/8</td>
+                <td>Gleichgewicht zwischen Hintergrunddetails und Motivisolierung</td>
+            </tr>
+            <tr>
+                <td>Sportfotografie</td>
+                <td>f/2.8 bis f/4</td>
+                <td>Große Blende für kurze Belichtungszeiten und Motivisolierung</td>
+            </tr>
+            <tr>
+                <td>Nachtfotografie</td>
+                <td>f/1.8 bis f/5.6</td>
+                <td>Mehr Licht bei schlechten Lichtverhältnissen einfangen, Rauschen reduzieren</td>
+            </tr>
+            <tr>
+                <td>Architekturfotografie</td>
+                <td>f/8 bis f/11</td>
+                <td>Schärfe und Details im gesamten Bild</td>
+            </tr>
+            <tr>
+                <td>Produktfotografie</td>
+                <td>f/8 bis f/16</td>
+                <td>Das gesamte Produkt ist scharf gestellt</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -267,7 +338,7 @@ function templateDepthOfField() {
         <br>
         <H4>Größe vom Objekt ändert sich jeweils</H4>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -282,7 +353,7 @@ function templateMilkyWay() {
         <p>Weißabgleich fest auf Tageslicht bzw. auf ca. 3900 K</p>        
         <p>Belichtungszeit ca. 7 sek. nach npf Rechner</p>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -315,7 +386,12 @@ function templateApps() {
 
         <H3>npf-Rechner</H3>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <h3>Bildbearbeitung</h3>            
+        <p>NX Studio</p>
+        <p>RapidRAW</p>
+        <p>DxO Photo Lap 9</p>
+
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -363,7 +439,7 @@ function templateNdFilter() {
             bedecktem Himmel.</p>
         <p>Ideal für kreative Langzeitbelichtungen von Wasser, Wolken, Menschenmengen oder urbanen Szenen.</p>
         
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -491,7 +567,7 @@ function templateNdFilterTabelle() {
             </tbody>
         </table>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -500,7 +576,7 @@ function templateNorthernLights() {
         <H2>Polarlichter</H2>
         <p>Bohnensack Folge 219 ab ca. Min.30</p>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -515,7 +591,7 @@ function templateFireworks() {
         <p>Weißabgleich fest auf ca. 5000 K</p>        
         <p>Belichtungszeit ca. 3-4 sek.</p>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -526,7 +602,7 @@ function templateFance() {
         <p>Ganz nah ran gehen, reinzoomen, Blende ganz auf.</p>
         <p>Dann sollte der Zaun nicht zu sehen sein.</p>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }
 
@@ -539,6 +615,6 @@ function templateMonitor() {
         <p>----------</p>
         <p>Bohnensack Folge 62</p>
 
-        <button class="btn marBtn" onclick="showContent('tips')">Zurück</button>
+        <button class="btn marBtn backBtn" onclick="showContent('tips')">Zurück</button>
     `
 }

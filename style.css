@@ -49,6 +49,7 @@ h1 {
 .meine-tabelle td,
 .meine-tabelle th {
     border: 1px solid black;
+    font-size: clamp(16px, 1.6vw, 20px);
 }
 
 .meine-tabelle td,
@@ -115,6 +116,10 @@ nav ul {
 .btn:hover {
     background-color: var(--bgColorImgHover);
     transform: scale(0.97);
+}
+
+.backBtn {
+    background: var(--bgColorBackBtn);
 }
 
 .marBtn {

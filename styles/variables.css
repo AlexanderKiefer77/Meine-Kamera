@@ -24,5 +24,6 @@
     --bgColorImg: #1F191A; /*around the picture*/
     --bgColorImgHover: #322A18; /*around the picture hover*/
     --bgColorBtn: #1F191A;
+    --bgColorBackBtn: rgb(179, 57, 50);
     --bgColorDynamicContent: rgb(100, 90, 30);
 }
